@@ -4,6 +4,8 @@ pipeline {
         stage('version') {
             steps {
                 bat 'python --version'
+                bat 'echo %PATH%'
+                bat 'where cmd'
             }
         }
       stage('Run Script'){
